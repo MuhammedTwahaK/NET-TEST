@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Communication Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="header">
+            <h1>Mass Communication Quiz</h1>
+            <div id="scoreboard">
+                Score: <span id="score">0</span>
+            </div>
+        </div>
+
+        <div id="timer-container">
+            <div id="timer-box">
+                Time Left: <span id="timer">60</span> seconds
+            </div>
+        </div>
+
+        <div id="question-container">
+            <div class="question" id="question">Question text</div>
+            <ul class="answers" id="answers"></ul>
+        </div>
+
+        <div id="result" class="result" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <div id="score-card">
+                <table>
+                    <tr>
+                        <th>Right Answers</th>
+                        <th>Wrong Answers</th>
+                        <th>Timeouts</th>
+                    </tr>
+                    <tr>
+                        <td id="correct-count">0</td>
+                        <td id="wrong-count">0</td>
+                        <td id="timeout-count">0</td>
+                    </tr>
+                </table>
+            </div>
+            <p id="final-score">Your Score: 0</p>
+            <button class="restart" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+        <footer>
+            <p>Powered by <a href="#">Twaha</a></p>
+        </footer>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

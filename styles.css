@@ -1,0 +1,230 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Soft light grey-blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dce2e9; /* Light border */
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #2c3e50; /* Dark blue for title */
+    margin-bottom: 15px;
+}
+
+#scoreboard {
+    font-size: 20px;
+    color: #2980b9; /* Soft blue for score */
+    font-weight: bold;
+}
+
+#timer-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#timer-box {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #2980b9; /* Blue for timer */
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+#question-container {
+    margin-bottom: 30px;
+}
+
+.question-number {
+    font-size: 20px;
+    color: #1a5276; /* Darker blue for question number */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.question {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #5d6d7e; /* Light grey-dark charcoal for question text */
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.answers li {
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    background-color: #d5dbdb; /* Light grey-blue for option box */
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding-left: 20px; /* Indented text for style */
+}
+
+button:hover {
+    background-color: #aab7b8; /* Slightly darker grey on hover */
+    transform: translateY(-3px); /* Hover effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Slight click effect */
+}
+
+button.correct {
+    background-color: #27ae60; /* Green for correct answers */
+}
+
+button.wrong {
+    background-color: #e74c3c; /* Red for wrong answers */
+}
+
+#result {
+    text-align: center;
+}
+
+#score-card {
+    margin-bottom: 40px;
+}
+
+#score-card table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#score-card th,
+#score-card td {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#score-card th {
+    background-color: #34495e; /* Dark grey for table headers */
+    color: white;
+}
+
+#score-card td {
+    background-color: #ecf0f1; /* Light grey for table rows */
+}
+
+#final-score {
+    font-size: 28px;
+    color: #e67e22; /* Orange for final score */
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.restart {
+    background-color: #3498db; /* Blue for restart button */
+    color: white;
+    padding: 18px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.restart:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    font-size: 16px;
+    color: #7f8c8d; /* Grey for footer */
+    margin-top: 40px;
+}
+
+footer a {
+    color: #2980b9; /* Blue links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #timer-box {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+
+    .question {
+        font-size: 22px;
+    }
+
+    .question-number {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #score-card table {
+        font-size: 16px;
+    }
+
+    #final-score {
+        font-size: 24px;
+    }
+}
